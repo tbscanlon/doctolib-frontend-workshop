@@ -45,11 +45,20 @@ If you break these rules you will be fired
 5. In your web browser, navigate to `http://localhost:5173/`. You should see a blank webpage
 6. In your text editor, open the `index.html` within your local copy of the repository
 
+## Resources
+
+Handy resources for this workshop:
+
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML) - comprehensive documentation on different HTML elements.
+- [web.dev](https://web.dev/html#new-to-html) - guides and articles about HTML usage.
+
 ## Challenges
 
 Doctolib are preparing to announce the launch of their innovate new health service, the Doctolib Health Satellite Mesh Network. Using a group of satellites launched into space above Europe, Doctolib can now provide instant AI-driven healthcare, both in Europe and in space above Europe, to residents and astronauts that hold a DoctoCard NFT token for the low price of 100 DoctoCoins per consultation.
 
 Your challenge is to prepare the web page announcing this fantastic new service!
+
+---
 
 ### Challenge 1
 
@@ -71,11 +80,27 @@ We will need the following:
 
 ℹ️ **NOTE::** You don't have to link to real pages here, you can use `#` as the `href` in the link to make a 'dummy' or placeholder link ℹ️
 
+💡 **TIPS** 💡
+
+- What HTML elements can you use to structure a page? Is a `<div>` enough, or are there other choices?
+- What factors would influence your choice between using a `<div>` versus something else?
+- What element would make the most sense for a list of links?
+
+---
+
 ### Challenge 2
 
 Now that the page isn't blank, we can start adding some content. In the `content/` folder, you'll find a file called `press-release.md`. Your task is to add the content of this file to the page, taking care to ensure the content is added semantically using proper HTML tags.
 
 ⚠️ **NOTE::** Remember to use semantic HTML to preserve the headings and formatting! ⚠️
+
+💡 **TIPS** 💡
+
+- Are `<div>`s enough here? Are there any other elements we can use?
+- How might we visually display the metadata at the start of the press release? Are there any ways to semantically label it with HTML?
+- Why would it be important to consider semantically labelling our content?
+
+---
 
 ### Challenge 3
 
@@ -90,9 +115,20 @@ Their requirements are:
 1. We should validate that a real email address has been entered into the field.
 1. When tapping on the field on a mobile device, the `@` symbol should be visible on the keyboard to make it easy for people to enter their email address. If we could also get autocomplete support for a visitor's email address that would be great.
 
+ℹ️ **NOTE::** The newsletter submission doesn't have to go anywhere or do anything - its presence on the page is enough ℹ️
+
+💡 **TIPS** 💡
+
+- How can we validate a form field without JS?
+- How can we validate that the form is not empty without JS?
+
+---
+
 ## Extra Credit
 
 The page looks pretty complete now! Here are some optional extra challenges to really stretch your learning. These challenges can be completed in any order. They're a bit tougher, so don't worry if you don't complete them today.
+
+---
 
 ### Extra Credit 1 (Difficulty: easy)
 
@@ -104,6 +140,12 @@ Your task is to add this photo.
 
 ⚠️ **NOTE::** Since we're using `vite` for this workshop, you will need to exclude `public` from any `src` attributes in images. For example, `/public/example.jpg` -> `/example.jpg` ⚠️
 
+💡 **TIPS** 💡
+
+- When and where should we use alt text with images?
+
+---
+
 ### Extra Credit 2 (Difficulty: medium)
 
 We've received lots of questions from our community about the Doctolib Health Satellite Mesh Network! Our product managers have compiled a set of frequently asked questions and answers, and would like to add these questions to the page. The questions and answers can be found in `content/faqs.md`.
@@ -112,8 +154,15 @@ Your challenge is to add the FAQ's to the page, with the following requirements:
 
 1. The FAQ's should come _after_ the newsletter sign-up on the page
 2. By default, only the questions should be visible. Clicking/tapping on a question should 'reveal' the answer.
+3. Product would like only one answer to be visible at a time (e.g., clicking another answer closes the one already open) - they don't want people thinking too much about the implications of this great new service!
 
-### Extra Credit 3 (Difficulty: NIGHTMARE MODE)
+💡 **TIPS** 💡
+
+- Which HTML elements are useful for providing details and summaries of content?
+
+---
+
+### Extra Credit 3 (Difficulty: hard)
 
 Product want to include a diagram of the blueprints for the satellites within the article. We've received the blueprint image, but it's very hard to see on mobile devices, so Design have created a desktop version of the blueprints and a mobile version.
 
@@ -125,9 +174,41 @@ Your task is to insert these pictures into the article, with the following requi
 2. People visiting the page on desktop devices **only** see the desktop blueprint image
 3. By default, we show a visitor the mobile blueprint image if we can't determine desktop vs. mobile
 
-## Resources
+💡 **TIPS** 💡
 
-Handy resources for this workshop:
+- Which HTML elements can we use to show pictures?
+- What query can we use to check which kind of device a visitor is using?
 
-- [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML) - comprehensive documentation on different HTML elements.
-- [web.dev](https://web.dev/html#new-to-html) - guides and articles about HTML usage.
+---
+
+### Extra Credit 4 (Difficulty: ???)
+
+Let's try to understand _why_ using semantic HTML elements are so important!
+
+Your browser should have accessibility developer tools. In Chrome, there is a floating action button in the inspector window with a icon of a human; click on this icon to switch from the DOM tree to the accessibility tree. In Firefox, there's a top-level tab for the accessibility tree.
+
+First, expand and examine the accessibility tree. Note the keys and the values - do they make sense?
+
+Now, try replacing some elements with less semantic equivalents and refresh the page to see the updated accessibility tree. Do the keys and values still make sense? Do they make _as much sense_ as they did before, when you had used semantic elements?
+
+For this challenge try to answer these questions:
+
+- Why is this important?
+- Who benefits from this?
+- Does this make a difference to your work as a developer?
+- Does this make a difference to you as a user?
+
+---
+
+## Retrospective
+
+Here are some questions to think about and to discuss with other participants after completing the challenges:
+
+1. What did you learn today?
+   - Did you learn anything new?
+   - Did you solidify or build on any existing knowledge?
+2. How easy or difficult were the challenges?
+   - Is there anything you would change?
+3. Do you feel more confident now about using HTML?
+4. Do you feel more confident now about discussing HTML with other colleagues, both technical and non-technical?
+5. Most importantly, did you have fun?
