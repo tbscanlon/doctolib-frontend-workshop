@@ -49,8 +49,10 @@ If you break these rules you will be fired
 
 Handy resources for this workshop:
 
+- ⚠️ **IMPORTANT::** [Introduction to Semantic HTML](https://web.dev/learn/html/semantic-html) ⚠️
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML) - comprehensive documentation on different HTML elements.
 - [web.dev](https://web.dev/html#new-to-html) - guides and articles about HTML usage.
+- [W3C Validator](https://validator.w3.org/nu/) - Linting for your HTML basically.
 
 ## Challenges
 
