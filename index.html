@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav aria-label="primary-navigation">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Login</a></li>
@@ -21,12 +21,15 @@
   <main>
     <article>
       <img src="/satellite.png" alt="A satellite in the Doctolib Health Satellite Mesh Network, as seen from space.">
-      <p>
-        Posted by Stanislas Niox-Chateau (
-      <address><a href="mailto:stan@example.com">stan@example.com</a></address>) at <time datetime="2025-12-15">Mon Dec
-        15 2025 16:00:00</time>
-      </p>
       <h1>Doctolib Announces Pioneering Health Satellite Mesh Network</h1>
+      <div>
+        <address>
+          Posted by Stanislas Niox-Chateau (<a href="mailto:stan@example.com">stan@example.com</a>)
+        </address>
+        <p>
+          Posted at <time datetime="2025-12-15">Mon Dec 15 2025 16:00:00</time>
+        </p>
+      </div>
       <p>
         Doctolib is preparing to unveil a groundbreaking new healthcare service: the <strong>Doctolib Health Satellite
           Mesh
@@ -62,7 +65,7 @@
       <picture>
         <source media="(orientation: landscape)" srcset="/blueprint_desktop.png">
         <source media="(orientation: portrait)" srcset="/blueprint_mobile.png">
-        <img src="/blueprint_mobile.png">
+        <img src="/blueprint_mobile.png" alt="A blueprint of a satellite in the DHSMN">
       </picture>
       <h2>Extending Care from Europe to Space</h2>
       <p>
@@ -154,7 +157,7 @@
           opportunities, and behind‑the‑scenes insights from our teams on Earth and in orbit.
         </p>
         <!-- Text field for email address goes here -->
-        <form action="" method="get">
+        <form action="#" method="get">
           <label>
             Email address:
             <input type="email" name="newsletter-email" id="newsletter-email" required>
@@ -233,7 +236,7 @@
     </section>
   </main>
   <footer>
-    <nav>
+    <nav aria-label="footer-navigation">
       <ul>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Cookies Policy</a></li>
